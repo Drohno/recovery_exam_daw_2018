@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Examen UF3</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/codi.js"></script>
+    </head>
+    <body class="landing">
+
+        <header id="header">
+            <nav id="nav">
+                <ul>
+                    <li><a id="link_register" href="#">Register</a></li>
+                    <li><a id="link_login" href="#">Login</a></li>
+                    <li><a id="link_logoff" href="#">Logoff</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="register" class="wrapper style3 special">
+            <div class="container">
+                <header class="major">
+                    <h2>Register</h2>
+                </header>
+            </div>
+            <div class="container 50%">
+                <form action="#" method="post" name="register">
+                    <div class="row uniform">
+                        <div class="6u 12u">
+                            <input name="username" id="username" value="" placeholder="Username" type="text" required>
+                        </div>
+                        <div class="6u 12u">
+                            <input name="email" id="email" value="" placeholder="Email" type="email" required>
+                        </div>
+                        <div class="6u 12u">
+                            <input name="password" id="password" value="" placeholder="Password" type="password" required>
+                        </div>
+                        <div class="6u 12u">
+                            <input name="password2" id="password2" value="" placeholder="Repeat Password" type="password" required>
+                        </div>
+                        <div class="12u">
+                            <ul class="actions">
+                                <li><input id="submit_register" value="Register" class="special big" type="submit"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="login" class="wrapper style3 special">
+            <div class="container">
+                <header class="major">
+                    <h2>Login</h2>
+                </header>
+            </div>
+            <div class="container 50%">
+                <form action="#" method="post" name="login">
+                    <div class="row uniform">
+                        <div class="6u 12u">
+                            <input name="username" id="username_login" value="" placeholder="Username" type="text" required>
+                        </div>
+                        <div class="6u 12u">
+                            <input name="password" id="password_login" value="" placeholder="Password" type="password" required>
+                        </div>
+                        <div class="12u">
+                            <ul class="actions">
+                                <li><input id="submit_login" value="Login" class="special big" type="submit"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>        
+        
+        <section id="main" class="wrapper style3 special">
+            <div class="container">
+                <header class="major">
+                    <h2 id="username_main"></h2>
+                    <img src="images/profile.png" />
+                </header>
+            </div>
+        </section>
+        
+        <footer id="footer">
+            <div class="container">
+                <div class="row 8u 12u">
+                    <ul class="copyright">
+                        <li>&copy; IES Marianao</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
