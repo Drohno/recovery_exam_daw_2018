@@ -75,7 +75,13 @@ $(document).ready(function () {
 
             //EXERCICI 3A
 
+            $("#username").val('');
+            $("#email").val('');
+            $("#password").val('');
+            $("#password2").val('');
 
+            $('#register').fadeOut();
+            $('#login').fadeIn();
 
 
 
