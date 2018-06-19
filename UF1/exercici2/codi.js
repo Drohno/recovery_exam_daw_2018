@@ -1,25 +1,29 @@
-var colors = ["blau", "groc", "vermell", "verd", "rosa"]; 
+var colors = ["blau", "groc", "vermell", "verd", "rosa"];
 
-function inici(){
+function inici() {
 
     document.getElementById('boto').addEventListener('click', () => {
         var color = document.getElementById('color').value;
-        color = color.toLowerCase();
-        var i = 0, trobat = false;
-        while(i<colors.length && !trobat){
-            if(colors[i] == color){
-                trobat = true;
+        if (color != null && color != undefined) {
+            color = color.toLowerCase();
+            var i = 0,
+                trobat = false;
+            while (i < colors.length && !trobat) {
+                if (colors[i] == color) {
+                    trobat = true;
+                }
+                i++;
             }
-            i++;
-        }
-        if(trobat){
-            document.getElementById('resultat').innerHTML = 'Color ' + color + ' trobat !!';
+            if (trobat) {
+                document.getElementById('resultat').innerHTML = 'Color ' + color + ' trobat !!';
+            } else {
+                document.getElementById('resultat').innerHTML = 'Color ' + color + ' no trobat. Prova una altra vegada !!';
+            }
         }else{
-            document.getElementById('resultat').innerHTML = 'Color ' + color + ' no trobat. Prova una altra vegada !!';
+            window.alert('Valor introduit erroni');
         }
-        
+
     });
 }
 
-window.onload=inici;
-
+window.onload = inici;
