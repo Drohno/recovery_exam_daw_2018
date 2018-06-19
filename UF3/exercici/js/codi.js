@@ -12,9 +12,19 @@ $(document).ready(function(){
     
     //EXERCICI 1
     
-    
-    
-    
+    $('#login').css('display', 'none');
+    $('#main').css('display', 'none');
+    $('#link_logoff').css('display', 'none');
+
+    $("#link_register").click(function(event){
+        $('#login').fadeOut();
+        $('#register').fadeIn();
+    });
+
+    $("#link_login").click(function(event){
+        $('#register').fadeOut();
+        $('#login').fadeIn();
+    });
     
     //*-----------------------------------------*\\
     
